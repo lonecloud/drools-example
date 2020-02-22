@@ -22,4 +22,7 @@
     <kbase name="chp4Decl" packages="chp4.decl">
         <ksession name="decl"/>
     </kbase>
+    <kbase name="chp4when" packages="chp4.when2">
+        <ksession name="when"/>
+    </kbase>
 </kmodule>

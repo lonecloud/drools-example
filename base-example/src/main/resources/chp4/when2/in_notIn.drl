@@ -1,0 +1,26 @@
+package  chp4.when2
+import cn.lonecloud.drools.bean.Person;
+import java.util.ArrayList;
+/**  
+  * @Package chp4.when
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/225:02 PM
+  * @version v1.0
+  */
+rule "chp4.when.when_in"
+ when
+    $list:ArrayList();
+    $p:Person(name in ("小明","小华"))
+ then
+    System.out.println("chp4.when.when_in"+$p);
+    //
+  end
+
+  rule "chp4.when.when_in_notIn"
+   when
+      $p:Person(name not in ("小明","小华"))
+   then
+      System.out.println("chp4.when.when_in_notIn"+$p);
+      //
+    end
