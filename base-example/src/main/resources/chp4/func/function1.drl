@@ -1,0 +1,16 @@
+package chp4.func
+
+rule "funTest2"
+   when
+     then
+      demo();
+      paramPrint("小米","哈哈");
+      end
+
+function void demo(){
+   System.out.println("我是demo函数");
+}
+
+function void paramPrint(String name,String age){
+   System.out.println("我是打印函数"+name+"age:"+age);
+}

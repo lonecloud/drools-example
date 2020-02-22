@@ -1,0 +1,7 @@
+package  chp4.func
+
+rule "demo"
+ when eval(true)
+ then
+     demo();
+  end

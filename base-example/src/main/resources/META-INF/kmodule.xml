@@ -16,4 +16,7 @@
     <kbase name="chp4Query" packages="chp4.query1">
         <ksession name="query1"/>
     </kbase>
+    <kbase name="chp4Func" packages="chp4.func">
+        <ksession name="func"/>
+    </kbase>
 </kmodule>
