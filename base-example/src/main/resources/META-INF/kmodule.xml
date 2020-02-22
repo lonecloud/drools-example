@@ -19,4 +19,7 @@
     <kbase name="chp4Func" packages="chp4.func">
         <ksession name="func"/>
     </kbase>
+    <kbase name="chp4Decl" packages="chp4.decl">
+        <ksession name="decl"/>
+    </kbase>
 </kmodule>

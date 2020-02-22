@@ -1,0 +1,26 @@
+package  chp4.decl
+/**  
+  * @Package chp4.decl
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/224:36 PM
+  * @version v1.0
+  */
+declare Demo
+   name:String
+   age: Integer
+end
+rule "chp4.decl.declr"
+ when eval(true)
+ then
+    //
+    insert(new Demo("小米",30));
+ end
+
+rule "chp4.decl.declr2"
+ when
+    $d:Demo($name:name,$age:age)
+ then
+    //
+    System.out.println($name+"--"+$age);
+ end

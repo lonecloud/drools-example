@@ -1,0 +1,27 @@
+package  chp4.decl
+/**  
+  * @Package chp4.decl
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/224:36 PM
+  * @version v1.0
+  */
+declare Demo2 extends cn.lonecloud.drools.bean.Person
+   name2:String
+   age2: Integer
+end
+rule "chp4.decl.declr3"
+ when eval(true)
+ then
+    //
+    insert(new Demo2("小米",30,"小米2",300));
+ end
+
+rule "chp4.decl.declr4"
+ when
+    $d:Demo2($name:name,$age:age)
+ then
+    //
+    System.out.println($name+"--"+$age);
+    System.out.println($d.getName2()+"--"+$d.getAge2());
+ end
