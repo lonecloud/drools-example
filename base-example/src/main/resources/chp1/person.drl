@@ -1,0 +1,8 @@
+package chp1
+import cn.lonecloud.drools.bean.Person;
+   rule "person-sout"
+      when
+         $p:Person();
+      then
+        System.out.println("对象值为"+$p);
+   end

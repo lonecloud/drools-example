@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="helloWorld" packages="chp1">
+        <ksession name="helloWorld"/>
+    </kbase>
+    <kbase name="chp2" packages="chp2">
+        <ksession name="chp2"/>
+    </kbase>
+    <kbase name="chp3" packages="chp3">
+        <ksession name="chp3"/>
+        <ksession name="salience"/>
+    </kbase>
+</kmodule>

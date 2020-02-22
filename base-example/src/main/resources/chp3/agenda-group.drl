@@ -1,0 +1,17 @@
+package chp3
+rule "agenda"
+  agenda-group "demo1"
+  salience 40
+  when
+    eval(true)
+  then
+    System.out.println("agenda-group");
+  end
+
+rule "agenda2"
+  agenda-group "demo2"
+  salience 60
+  when eval(true)
+  then
+    System.out.println("agenda-group2");
+  end

@@ -1,0 +1,12 @@
+rule "timer1"
+  timer (int: 3s)
+  when eval(true)
+  then
+    System.out.println("3s执行一次");
+  end
+rule "timer2"
+  timer (cron: 0/15 * * * * ?)
+  when eval(true)
+  then
+    System.out.println("15s执行一次");
+  end

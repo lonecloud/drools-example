@@ -1,0 +1,18 @@
+package chp3
+rule "salience40"
+
+  salience 40
+  when
+    eval(true)
+  then
+    System.out.println("salience40");
+  end
+
+rule "salience2"
+  no-loop true
+  lock-on-active true
+  salience 60
+  when eval(true)
+  then
+    System.out.println("salience60");
+  end
