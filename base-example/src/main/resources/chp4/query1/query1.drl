@@ -1,0 +1,13 @@
+package chp4.query1
+
+import cn.lonecloud.drools.bean.Person;
+
+//查询年龄是否等于30
+query "person is 30"
+    p:Person(age==30)
+end
+//查询年龄是否等于$age
+query "person gt"(Integer $age)
+   person2:Person(age > $age)
+end
+

@@ -13,4 +13,7 @@
     <kbase name="chp4" packages="chp4.global1">
         <ksession name="global"/>
     </kbase>
+    <kbase name="chp4Query" packages="chp4.query1">
+        <ksession name="query1"/>
+    </kbase>
 </kmodule>
