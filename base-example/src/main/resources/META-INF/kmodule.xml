@@ -10,4 +10,7 @@
         <ksession name="chp3"/>
         <ksession name="salience"/>
     </kbase>
+    <kbase name="chp4" packages="chp4.global1">
+        <ksession name="global"/>
+    </kbase>
 </kmodule>

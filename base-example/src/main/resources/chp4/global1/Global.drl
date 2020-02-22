@@ -1,0 +1,20 @@
+package chp4.global1
+
+global java.lang.Integer count;
+
+
+rule "gloal1"
+salience 20
+when
+  eval(true)
+then
+    System.out.println(count);
+end
+
+rule "gloal2"
+salience  100
+when
+  eval(true)
+then
+    count=count+1;
+ end
