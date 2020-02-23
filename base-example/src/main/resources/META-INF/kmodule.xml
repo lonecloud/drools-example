@@ -28,4 +28,7 @@
     <kbase name="chp4from" packages="chp4.when_from">
         <ksession name="when_from"/>
     </kbase>
+    <kbase name="when_accumulate" packages="chp4.accum">
+        <ksession name="when_accumulate"/>
+    </kbase>
 </kmodule>

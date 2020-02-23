@@ -1,0 +1,17 @@
+package  chp4.when_from
+     import cn.lonecloud.drools.bean.*;
+     import java.util.LinkedList
+     /**
+       * @Package chp4.when_from
+       * @Description: from 关键词
+       * @author lonecloud
+       * @date 2020/2/238:30 PM
+       * @version v1.0
+       */
+     rule "chp4.when_from.when_collect"
+      when
+         $p:Person($z:clazz);
+         $list:LinkedList() from collect ($z2:Clazz(grade=="初中"));
+      then
+         System.out.println($list);
+       end

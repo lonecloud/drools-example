@@ -1,0 +1,18 @@
+package  chp4.accum
+import cn.lonecloud.drools.bean.Person
+import accumulate cn.lonecloud.drools.chp4.accum.SelfAccumulateFunaction  mul
+/**  
+  * @Package chp4.accum
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/239:28 PM
+  * @version v1.0
+  */
+no-loop true;
+rule "chp4.accum.self_accumlate"
+ when
+    accumulate(Person($age:age),$max:max($age),$sum:sum($age),$mul:mul($age))
+ then
+    System.out.println("乘法计算："+$mul);
+  end
+

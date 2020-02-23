@@ -1,0 +1,30 @@
+package  chp4.accum
+import cn.lonecloud.drools.bean.Person
+/**  
+  * @Package chp4.accum
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/239:28 PM
+  * @version v1.0
+  */
+no-loop true;
+rule "chp4.accum.when_accumlate"
+ when
+    $p:Person();
+    accumulate(Person($age:age),$max:max($age),$sum:sum($age))
+ then
+    System.out.println("最大值为+"+$max+"和："+$sum);
+    update($p)
+  end
+rule "chp4.accum.when_accumlate2"
+ when
+    $sum:Integer() from accumulate (Person($age:age),
+                                        init( Integer total = 0;),
+                                        action(total +=$age;),
+                                        reverse(total-=$age;System.out.println(total);)
+                                        result(total)
+                                        )
+ then
+    System.out.println("和："+$sum);
+  end
+
