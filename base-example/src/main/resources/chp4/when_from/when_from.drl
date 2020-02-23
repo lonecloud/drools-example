@@ -1,0 +1,16 @@
+package  chp4.when_from
+import cn.lonecloud.drools.bean.*;
+/**  
+  * @Package chp4.when_from
+  * @Description: from 关键词
+  * @author lonecloud
+  * @date 2020/2/238:30 PM
+  * @version v1.0
+  */
+rule "chp4.when_from.when_from"
+ when
+    $p:Person();
+    $z:Clazz(grade="初中") from $p.getClazz();
+ then
+    System.out.println($z);
+  end

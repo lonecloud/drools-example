@@ -25,4 +25,7 @@
     <kbase name="chp4when" packages="chp4.when2">
         <ksession name="when"/>
     </kbase>
+    <kbase name="chp4from" packages="chp4.when_from">
+        <ksession name="when_from"/>
+    </kbase>
 </kmodule>
