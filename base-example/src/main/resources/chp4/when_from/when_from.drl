@@ -10,7 +10,7 @@ import cn.lonecloud.drools.bean.*;
 rule "chp4.when_from.when_from"
  when
     $p:Person();
-    $z:Clazz(grade="初中") from $p.getClazz();
+    $z:Clazz(grade=="初中") from $p.getClazz();
  then
     System.out.println($z);
   end
