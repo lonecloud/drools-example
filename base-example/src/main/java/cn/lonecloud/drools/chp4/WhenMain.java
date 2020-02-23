@@ -20,10 +20,10 @@ public class WhenMain {
         KieServices kieServices = KieServices.Factory.get();
         KieContainer kieClasspathContainer = kieServices.getKieClasspathContainer();
         KieSession session = kieClasspathContainer.newKieSession("when");
-        session.insert(new Person("小华",30));
-        session.insert(new Person("小A",30));
+        session.insert(new Person("小华",10));
+        session.insert(new Person("小A",20));
         session.insert(new Person("小B",30));
-        session.insert(new Person("小C",30));
+        session.insert(new Person("小C",40));
         List<String> list=new ArrayList<>();
         list.add("小华");
         session.insert(list);

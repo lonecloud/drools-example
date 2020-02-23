@@ -1,0 +1,12 @@
+package chp4.when2
+import cn.lonecloud.drools.bean.Person;
+rule "chp4.when2.forall_when2"
+ when
+    forall(
+        $p:Person()
+        Person(this==$p,age==30)
+        )
+ then
+    System.out.println("when---：");
+
+  end

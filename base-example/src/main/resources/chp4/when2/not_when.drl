@@ -1,0 +1,32 @@
+package  chp4.when2
+import cn.lonecloud.drools.bean.Person;
+/**  
+  * @Package chp4.when2
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/225:15 PM
+  * @version v1.0
+  */
+rule "chp4.when2.not_when"
+ when
+    not Person();
+ then
+    System.out.println("该insert没有插入Person类");
+    //
+  end
+
+rule "chp4.when2.not_when2"
+ when
+
+   not(not Person()&&$p:Person());
+ then
+    System.out.println("该insert插入Person类,值为：");
+    //
+  end
+rule "chp4.when2.exist_when2"
+ when
+    exists Person()
+ then
+    System.out.println("该insert插入Person类,值为：");
+    //
+  end
