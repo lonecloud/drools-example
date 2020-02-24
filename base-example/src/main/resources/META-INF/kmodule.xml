@@ -34,5 +34,7 @@
     <kbase name="ex5" packages="chp5.ex_extends">
         <ksession name="chp5_extends"/>
     </kbase>
-
+    <kbase name="ch6" packages="chp6.case1">
+        <ksession name="chp6_case"/>
+    </kbase>
 </kmodule>

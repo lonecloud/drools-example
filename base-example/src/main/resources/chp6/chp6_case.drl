@@ -1,0 +1,32 @@
+package  chp6.case1
+/**  
+  * @Package chp6
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/2410:58 PM
+  * @version v1.0
+  */
+rule "rule1"
+ when
+    eval(true)
+ then
+    System.out.println(drools.getRule().getName());
+  end
+rule "rule2"
+ when
+
+ then
+    System.out.println(drools.getRule().getName());
+  end
+rule "rule3"
+ when
+
+ then
+    System.out.println(drools.getRule().getName());
+  end
+rule "rule4"
+ when
+
+ then
+    System.out.println(drools.getRule().getName());
+  end
