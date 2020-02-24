@@ -31,4 +31,8 @@
     <kbase name="when_accumulate" packages="chp4.accum">
         <ksession name="when_accumulate"/>
     </kbase>
+    <kbase name="ex5" packages="chp5.ex_extends">
+        <ksession name="chp5_extends"/>
+    </kbase>
+
 </kmodule>

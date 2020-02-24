@@ -1,0 +1,23 @@
+package  chp5.ex_extends
+import cn.lonecloud.drools.bean.Person;
+
+/**  
+  * @Package chp5
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/2/2410:12 PM
+  * @version v1.0
+  */
+rule "chp5.chp5_do_then"
+ enabled true
+ salience 20
+ no-loop true
+ when
+      $p:Person(age>20)
+ then
+      modify($p){
+         setAge(30),
+         setName("hahah")
+      }
+      System.out.println($p);
+  end
