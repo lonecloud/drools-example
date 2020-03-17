@@ -1,0 +1,14 @@
+package  test
+/**  
+  * @Package rules
+  * @Description: TODO
+  * @author lonecloud
+  * @date 2020/3/14:57 PM
+  * @version v1.0
+  */
+rule "rules.test"
+ when eval(true)
+ then
+    //
+    System.out.println("test success");
+  end
